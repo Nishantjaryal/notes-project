@@ -1,0 +1,170 @@
+*{margin:0px;
+padding: 0px;
+font-family:monospace;
+font-weight: 700;
+color: #6d6b6e;
+font-size: 15px;
+text-align: center;
+line-height: 1.5;
+letter-spacing: 0.5px;
+}
+:root{
+    --blue: linear-gradient(90deg , rgba(60, 221, 250, 0.144), rgba(0, 94, 255, 0.133));
+}
+
+*::selection{background: transparent;}
+
+body{
+    background: var(--blue) ;
+    margin-top: 50px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+input {
+    display: block;
+}
+
+nav {
+    background-color: white;
+    padding: 20px 0px;
+ 
+}
+
+.bar{
+    height: 5px;
+    background: var(--blue);
+}
+
+nav div {
+    margin: auto;
+}
+
+
+.site{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 235px);
+    padding: 25px;
+    gap: 25px;
+    place-content: center;
+}
+
+.site-help{
+    display: none;
+    grid-template-columns: repeat(auto-fill, 235px);
+    padding: 25px;
+    gap: 25px;
+    place-content: center;
+}
+
+.colorShifter{
+    box-sizing: border-box;
+    padding: 20px 30px;
+    color: white;
+    background-color: ;
+
+}
+
+.note{
+
+    height:235px;
+    background-color: rgb(193, 227, 251);
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(229, 220, 220);
+    box-sizing: border-box;
+    padding: 15px;
+    resize: none;
+    outline: none;
+    
+}
+
+@media screen and (max-width:750px) {
+    .note{
+        display: none;
+    }
+}
+
+.addNote{
+
+    background-color: rgba(0, 0, 0, 0.1);
+    border-style: none;
+    border-radius: 10px;
+    outline: none;
+    cursor:pointer;
+    font-size: 100px;
+    height: 235px;
+    text-align: center;
+    transition: 0.10s;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+
+}button:hover{
+    background-color:rgba(0, 0, 0, 0.15)
+}
+
+
+.p {margin: 20px 0px;}
+
+.btn{width: 100%;
+    background-color: #52a7f7;
+border-radius: 4px;
+border-style: none;
+border-width: 1.5px;
+padding: 11px 0px;
+border: none;
+cursor: pointer;
+color: azure;
+
+}
+.btn:hover{
+
+    background: rgb(143, 193, 255);
+    color: #d9f3fb;
+}
+
+
+
+.fonts {padding: 1.5px 6px;
+background-color: var(--blue);
+border-radius: 1px;
+background-color: #52a7f7;
+color: rgb(38, 38, 38);
+padding-bottom: 2px;}
+
+.fonts:hover{
+    background-color: rgb(143, 193, 255);
+
+}
+
+
+a{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+#colorbox{
+    border-color: white;
+    outline: none;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 3px;
+}
